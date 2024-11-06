@@ -1,0 +1,124 @@
+.admin-dashboard {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #696969;
+  color: #ecf0f1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.admin-image {
+  width: 52px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.admin-label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .clickable {
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar .clickable:hover {
+  color: #3498db;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0px;
+  background-color: #fcfcfc;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.applications-table th, .applications-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.applications-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.view-button {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.status.accepted {
+  color: green;
+}
+
+.status.rejected {
+  color: red;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.employee-details {
+  margin-top: 20px; /* Space between table and details */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  background-color: #d4d1d1;
+}

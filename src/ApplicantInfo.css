@@ -1,0 +1,133 @@
+/* src/ApplicantInfo.css */
+
+/* General form styling */
+.applicant-info {
+    max-width: 1200px; /* Increased width for landscape layout */
+    margin: 50px auto;
+    padding: 20px; /* Increased padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column grid layout */
+    gap: 20px; /* Increased gap for better spacing */
+    padding-left: 40px; /* Added left padding */
+    padding-right: 40px; /* Added right padding */
+}
+
+/* Title spans full width */
+.applicant-info h2 {
+    grid-column: span 2; /* Center title across both columns */
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Form group styling for grid layout */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 0 10px; /* Added horizontal padding */
+}
+
+/* Label styling */
+.input-container label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Adjusted input styling */
+.applicant-info input[type="text"],
+.applicant-info input[type="date"],
+.applicant-info textarea {
+    width: 100%; /* Full width within input-container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.applicant-info input[type="text"]:focus,
+.applicant-info input[type="date"]:focus,
+.applicant-info textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Birthday input styling */
+.birthday-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.birthday-input input[type="text"] {
+    width: 100%;
+    padding-right: 100px; /* Leave space for dropdowns */
+    box-sizing: border-box;
+}
+
+.birthday-select {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.birthday-select select {
+    width: 60px;
+    padding: 4px;
+    font-size: 12px; /* Increased font size for better readability */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Button styling */
+.button-container {
+    grid-column: span 2; /* Buttons span both columns */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-button,
+.next-button {
+    padding: 10px 15px; /* Increased button padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Increased font size for buttons */
+    flex: 1; /* Allow buttons to grow equally */
+    margin: 0 5px; /* Space between buttons */
+}
+
+.back-button {
+    background-color: #0a54e8;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #42bdea;
+}
+
+.next-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.next-button:hover {
+    background-color: #218838;
+}
+
+/* Full-width fields in grid layout */
+.full-width {
+    grid-column: span 2;
+}
+
+/* Preventing adjustment on Previous Work textarea */
+#work {
+    resize: none; /* Disable resizing */
+}

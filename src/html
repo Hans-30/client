@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulips in Purple</title>
+    <style>
+        body {
+            background-color: #E6E6FA; /* Light purple background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .tulip {
+            width: 50px;
+            height: 100px;
+            display: inline-block;
+            margin: 20px;
+            background-color: #800080; /* Purple color */
+            border-radius: 25px 25px 0 0; /* Petal shape */
+            position: relative;
+        }
+        .tulip::after {
+            content: '';
+            width: 5px;
+            height: 50px;
+            background-color: green; /* Stem color */
+            position: absolute;
+            bottom: -50px; /* Position stem below the flower */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tulips in Purple</h1>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+</body>
+</html>

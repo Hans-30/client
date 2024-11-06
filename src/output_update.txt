@@ -1,0 +1,10 @@
+  Line 6:10:  'approved' is assigned a value but never used  no-unused-vars
+
+src\ExploreCompany.js
+  Line 49:13:  Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt
+
+src\JobApplicationFlow.js
+  Line 9:10:   'score' is assigned a value but never used        no-unused-vars
+  Line 11:20:  'setJobTitle' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning

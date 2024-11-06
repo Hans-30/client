@@ -1,0 +1,84 @@
+/* Main container for centering forms */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Flexbox container for both login forms */
+.login-container {
+  display: flex;
+  gap: 50px;
+}
+
+/* Square login form styling */
+.login-form {
+  padding: 40px;
+  border: 1px solid #ddd; /* Subtle border for clean outline */
+  border-radius: 8px; /* Slightly rounded corners for a softer square shape */
+  width: 500px;
+  height: 500px; /* Ensures a square shape */
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Avatar image styling */
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+  border-radius: 50%; /* Keeps the avatar circular without additional styling */
+}
+
+/* Title styling */
+.login-form h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #225561;
+}
+
+/* Login button styling */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #225561;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #1a3f4d;
+}
+
+/* Error message styling */
+.error-message {
+  color: #d9534f;
+  font-size: 1rem;
+  margin-top: 10px;
+}

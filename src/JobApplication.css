@@ -1,0 +1,60 @@
+.application-box {
+    max-width: 700px; /* Maximum width of the box */
+    margin: 50px auto; /* Center the box with margin */
+    padding: 20px; /* Inner spacing */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+
+.job-title {
+    font-size: 1.5em; /* Font size for job title */
+    margin-bottom: 15px; /* Space below job title */
+    color: #333; /* Job title color */
+}
+
+.job-details {
+    margin-bottom: 20px; /* Space below job details */
+}
+
+.salary, .work-time {
+    font-weight: bold; /* Bold text */
+    color: #555; /* Text color */
+}
+
+.divider {
+    border: 0; /* No border */
+    height: 1px; /* Height of the divider */
+    background: #ddd; /* Divider color */
+}
+
+.agreement {
+    margin: 20px 0; /* Space around agreement section */
+    text-align: left; /* Align text to the left */
+}
+
+.agreement label {
+    display: block; /* Stack checkboxes vertically */
+    margin-bottom: 10px; /* Space between checkboxes */
+}
+
+.buttons {
+    display: flex; /* Use flexbox for button layout */
+    justify-content: space-between; /* Space out buttons */
+}
+
+.apply-button, .back-button {
+    padding: 10px 15px; /* Inner spacing */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer on hover */
+    background-color: #225561; /* Button background color */
+    color: white; /* Button text color */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.apply-button:hover, .back-button:hover {
+    background-color: #1a3d47; /* Darker shade on hover */
+}

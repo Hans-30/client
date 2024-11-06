@@ -1,0 +1,74 @@
+.job-application-flow {
+  max-width: 1000px; /* Adjust width as needed */
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.job-application-flow h1 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.horizontal-layout {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Distribute space between items */
+  width: 100%; /* Full width for the layout */
+}
+
+.step {
+  flex: 1; /* Allow steps to grow */
+  margin: 0 10px; /* Add some spacing between steps */
+  min-width: 250px; /* Set a minimum width for each step */
+}
+
+.job-application-flow .form-section {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Common button styles */
+.button {
+  background-color: #225561; /* The color for all buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #1a3d47; /* Darker shade for hover effect */
+}
+
+.error-message {
+  color: #d9534f;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}

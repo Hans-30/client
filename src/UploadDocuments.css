@@ -1,0 +1,64 @@
+.upload-documents {
+    max-width: 500px; /* Maximum width for the upload form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.upload-documents h2 {
+    text-align: center; /* Center the title */
+    color: #333; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.upload-documents label {
+    display: block; /* Block display for labels */
+    margin-bottom: 8px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+.upload-documents input[type="file"] {
+    width: 100%; /* Full width for file input */
+    padding: 10px; /* Padding inside file input */
+    margin-bottom: 15px; /* Space below file input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Button container for aligning back and submit buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-button,
+.submit-button {
+    width: 48%; /* Set width for each button to 48% for spacing */
+    padding: 10px; /* Padding inside the buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.back-button {
+    background-color: #0a54e8; /* Blue background for back button */
+}
+
+.back-button:hover {
+    background-color: #42bdea; /* Lighter blue on hover */
+}
+
+.submit-button {
+    background-color: #28a745; /* Green background for submit button */
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}

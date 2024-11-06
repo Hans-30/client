@@ -1,0 +1,114 @@
+/* Profile container layout */
+.profile-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Change to three columns */
+  gap: 25px;
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Profile card styles */
+.profile-card {
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Header container styles */
+.header-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.header-container h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 12px 20px;
+  background:#225561;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card content layout */
+.card-content {
+  display: flex;
+  flex-direction: column; /* Keep vertical alignment within each card */
+  align-items: center; /* Center items horizontally */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Photo container styles */
+.photo-container {
+  flex-shrink: 0;
+  width: 150px; /* Adjust width for better layout */
+  height: 150px; /* Adjust height for better layout */
+  border-radius: 50%; /* Make it a circle */
+  overflow: hidden;
+  padding: 5px;
+  background: #e8f1fc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Add margin below photo */
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Info container styles */
+.info-container {
+  text-align: center; /* Center text */
+  font-size: 1.15rem;
+}
+
+.info-container p {
+  margin: 5px 0;
+  color: #444;
+  line-height: 1.4;
+}
+
+.info-container p:first-child {
+  font-weight: bold;
+  color: #111;
+}
+
+/* Body background color */
+body {
+  background-color: #f4f6f9;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .profile-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+
+  .photo-container {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
